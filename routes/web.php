@@ -11,4 +11,10 @@
 |
 */
 
+// Route::get('/', 'HomeController@index');
 Route::get('/', 'HomeController@index');
+Route::get('/movies/create', 'HomeController@create');
+
+Route::post('/movies', 'MovieController@store');
+
+
